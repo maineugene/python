@@ -1,4 +1,5 @@
 def format_fio(fio):
+    '''Задача 1. Форматирование ФИО'''
     parts = fio.split(" ")
     if len(parts) != 3:
         print("wrong format of fio")
