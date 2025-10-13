@@ -5,6 +5,8 @@ def is_valid_ip(ip):
     for part in parts:
         if not part.isdigit():
             return False
+        if len(part) > 1 and part.startswith('0'):
+            return False  # ведущий ноль недопустим
         num = int(part)
         if not (0 <= num <= 255):
             return False
