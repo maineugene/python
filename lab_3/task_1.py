@@ -2,6 +2,7 @@
 class BankAccount:
     accounts_quantity = 0
     MIN_BALANCE = 100
+
     def __init__(self, account_number, balance = 0):
         self.account_number = account_number
         self.balance = balance
@@ -21,6 +22,7 @@ class BankAccount:
 
     def check_balance(self):
         print(f'balance:{self.balance}')
+
 acc = BankAccount('1',50)
 acc.deposit(100)
 acc.check_balance()
